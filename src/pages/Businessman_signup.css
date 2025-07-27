@@ -1,0 +1,279 @@
+.businessman-signup-page{
+    --background: white;
+    margin: 0;
+    padding: 0;
+}
+.b-signup-success-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    margin: 60px auto;
+    position: relative;
+}
+  
+.b-signup-wave-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+  
+.b-signup-wave-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(76, 175, 80, 0.2);
+    top: 0;
+    left: 0;
+    animation: wave 1.5s infinite;
+}
+  
+.b-signup-wave-circle.delay1 {
+    animation-delay: 0.3s;
+}
+  
+.b-signup-wave-circle.delay2 {
+    animation-delay: 0.6s;
+}
+  
+  @keyframes wave {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  
+.b-signup-checkmark-circle {
+    background-color: #4CAF50;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.b-signup-checkmark {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+  
+.b-signup-success-heading {
+    color: #2e7d32;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+  
+.b-signup-success-message {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+  
+.b-signup-done-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+  .b-signup-done-button:hover {
+    background-color: #388e3c;
+}
+/* ------------------------------------------- */
+.b-signup-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+   
+}
+.b-signup-l-img {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+  
+
+.b-signup-logo-container {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+   margin-left: 45%;
+   margin-top: 10%;
+   border-radius: 20px;
+   overflow: hidden;
+}
+
+
+.b-signup-box {
+    
+    padding: 2rem;
+   
+    width: 95%;
+    max-width: 500px; 
+    border-radius: 0.75rem;
+}
+
+.b-signup-error {
+    background-color: #fee2e2;
+    border: 1px solid #f87171;
+    color: #b91c1c;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.b-signup-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.b-signup-field {
+    margin-bottom: 1rem;
+}
+
+.b-signup-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #374151;
+    font-size: 1rem;
+}
+
+.b-signup-input-wrapper {
+    position: relative;
+}
+
+.b-signup-icon {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    color: #6b7280;
+}
+
+.b-signup-input {
+    padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    color: #374151;
+    outline: none;
+    transition: border-color 0.2s;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.b-signup-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.b-signup-password-wrapper {
+    position: relative;
+}
+
+.b-signup-toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.b-signup-button {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
+}
+
+.b-signup-button:hover {
+    background-color: #1d4ed8;
+}
+
+.b-signup-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #6b7280;
+}
+
+.b-signup-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.b-signup-link:hover {
+    color: #1d4ed8;
+}
+
+.b-signup-divider {
+    height: 0.5rem;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    background: linear-gradient(to right, #60a5fa, #6366f1, #a78bfa);
+}
+
+.b-signup-recaptcha {
+    margin-bottom: 1rem;
+}
+
+.b-signup-resend {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .b-signup-container {
+        padding: 0.5rem;
+    }
+    
+    .b-signup-box {
+        width: 98%;
+        padding: 1.5rem;
+    }
+    .b-signup-logo-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40%;
+       
+    }
+}

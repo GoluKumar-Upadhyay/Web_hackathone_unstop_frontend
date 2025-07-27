@@ -1,0 +1,174 @@
+.business-order-page {
+    --background: #f5f5f5;
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    gap: 16px;
+  }
+  
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .empty-state h2 {
+    color: var(--ion-color-medium);
+    margin-bottom: 8px;
+  }
+  
+  .empty-state p {
+    color: var(--ion-color-medium-shade);
+  }
+  
+  .orders-container {
+    padding: 16px;
+    padding-bottom: 32px;
+  }
+  
+  .order-card {
+    margin-bottom: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-card ion-card-header {
+    padding-bottom: 8px;
+  }
+  
+  .order-card ion-card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--ion-color-dark);
+  }
+  
+  .status-badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  .status-badge ion-icon {
+    font-size: 14px;
+  }
+  
+  .product-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .product-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .order-details {
+    padding-left: 12px;
+  }
+  
+  .order-details h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--ion-color-dark);
+  }
+  
+  .order-details p {
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    color: var(--ion-color-medium-shade);
+  }
+  
+  .order-details .price {
+    color: var(--ion-color-success);
+    font-weight: 600;
+  }
+  
+  .order-details .customer {
+    color: var(--ion-color-primary);
+  }
+  
+  .order-details ion-icon {
+    font-size: 16px;
+  }
+  
+  .status-update-item {
+    margin-top: 16px;
+    background: var(--ion-color-light);
+    border-radius: 8px;
+    padding: 8px 12px;
+  }
+  
+  .status-update-item ion-label {
+    font-weight: 500;
+    color: var(--ion-color-dark);
+  }
+  
+  .status-update-item ion-select {
+    max-width: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .orders-container {
+      padding: 12px;
+    }
+    
+    .order-card {
+      margin-bottom: 12px;
+    }
+    
+    .order-details h3 {
+      font-size: 1rem;
+    }
+    
+    .order-details p {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Animation for status updates */
+  .status-update-item ion-spinner {
+    --color: var(--ion-color-primary);
+  }
+  
+  /* Custom select styling */
+  ion-select {
+    --placeholder-color: var(--ion-color-medium);
+    --color: var(--ion-color-dark);
+  }
+  
+  /* Toast positioning */
+  ion-toast {
+    --border-radius: 8px;
+  }
+  
+  /* Card hover effect */
+  .order-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .order-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }

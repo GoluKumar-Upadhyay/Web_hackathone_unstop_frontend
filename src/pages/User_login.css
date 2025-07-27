@@ -1,0 +1,167 @@
+.user_login {
+    --background: #fbfbf2;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.loginpage {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.avtar {
+    height: 90px;
+    width: 90px;
+    margin-top: 80px;
+    background-image: url(user.png);
+    background-size: cover;
+}
+
+.loginfont {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    background-color: white;
+}
+
+#forgetpassword {
+    color: #2382f7;
+    font-weight: bold;
+    text-align: right;
+}
+
+.forget {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.loginbtn {
+    --background: #42a5f5;
+    width: 80%;
+    color: white;
+    max-width: 400px; 
+}
+
+.banner {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 50px;
+    padding: 12px 0px;
+    flex-wrap: wrap; 
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0; 
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    flex-shrink: 0; 
+}
+
+.secure-icon {
+    background-color: #00b4d8;
+}
+
+.privacy-icon {
+    background-color: #0077b6;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.signup {
+    color: black;
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+.textsignup {
+    color: #2382f7;
+    text-decoration: none;
+}
+.Labeluser_signup{
+    font-size: 20px;
+    color: black;
+    font-family: sans-serif;
+   
+}
+
+@media screen and (max-width: 768px) {
+    .loginfont {
+        font-size: 22px; 
+    }
+    
+    .avtar {
+        margin-top: 50px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        gap: 70px; 
+    }
+    
+    .inputs {
+        width: 100%; 
+    }
+    
+    .forget, .loginbtn {
+        width: 100%; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .input-container {
+        max-width: 600px; 
+    }
+}

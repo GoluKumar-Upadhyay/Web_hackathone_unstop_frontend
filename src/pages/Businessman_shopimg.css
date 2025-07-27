@@ -1,0 +1,22 @@
+.business-shopimg-page{
+    --background: white;
+}
+.business-shopimg-img-container{
+    max-height: 400px;
+    height: auto;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.businessman-shopimg-used{
+    height: 300px;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,328 @@
+.b-signin-businessman-signin-page {
+    --background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.b-signin-page {
+    width: 100%;
+    
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+}
+
+.b-signin-logo-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.b-signin-logo-container-box {
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: red;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.b-signin-img-fix {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.b-signin-welcome-back-in {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+}
+
+.b-signin-sname {
+    font-size: 24px;
+    margin: 0 0 2rem 0;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.b-signin-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.b-signin-input-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.b-signin-input-wrapper {
+    position: relative;
+}
+
+.b-signin-input-icon {
+    position: absolute;
+    inset: 0 auto 0 0;
+    padding-left: 0.75rem;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.b-signin-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    color: #9CA3AF;
+}
+
+.b-signin-input-field {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 0.75rem 1rem 2.5rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    background-color: rgba(249, 250, 251, 0.5);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    font-size: 16px;
+}
+
+.b-signin-input-field:focus {
+    background-color: #ffffff;
+    outline: none;
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.b-signin-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.b-signin-form-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b-signin-form-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.b-signin-forgot-password {
+    font-size: 0.875rem;
+    color: #2563eb;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.b-signin-forgot-password:hover {
+    color: #1e40af;
+}
+
+.b-signin-form-input-wrapper {
+    position: relative;
+}
+
+.b-signin-form-icon-left,
+.b-signin-form-icon-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.b-signin-form-icon-left {
+    left: 0;
+    padding-left: 0.75rem;
+    pointer-events: none;
+}
+
+.b-signin-form-icon-right {
+    right: 0;
+    padding-right: 0.75rem;
+}
+
+.b-signin-form-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #9ca3af;
+}
+
+.b-signin-form-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 3rem 1rem 2.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: rgba(249, 250, 251, 0.5);
+    transition: all 0.2s ease;
+    font-size: 16px;
+}
+
+.b-signin-form-input:focus {
+    background-color: white;
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.b-signin-form-eye-toggle {
+    background: transparent;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.b-signin-form-eye-toggle:hover {
+    color: #4b5563;
+}
+
+.b-signin-error-container {
+    background-color: #fef2f2;
+    border-left: 4px solid #ef4444;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.b-signin-error-text {
+    color: #b91c1c;
+    font-size: 0.875rem;
+}
+
+.b-signin-submit-button {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #2563eb, #4f46e5);
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+.b-signin-submit-button:focus {
+    box-shadow: 0 0 0 2px #2563eb33;
+}
+
+.b-signin-submit-button:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.b-signin-submit-button-hover-effect {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: white;
+    border-radius: 9999px;
+    opacity: 0.1;
+    transition: all 0.5s ease-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.b-signin-submit-button:hover .b-signin-submit-button-hover-effect {
+    width: 14rem;
+    height: 14rem;
+}
+
+.b-signin-submit-button-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-signin-spinner-icon {
+    animation: b-signin-spin 1s linear infinite;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    color: white;
+}
+
+.b-signin-spinner-circle {
+    opacity: 0.25;
+}
+
+.b-signin-spinner-path {
+    opacity: 0.75;
+}
+
+@keyframes b-signin-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.b-signin-signup-footer {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.b-signin-signup-footer-text {
+    color: #4b5563;
+    font-size: 0.875rem;
+}
+
+.b-signin-signup-footer-link {
+    font-weight: 500;
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.b-signin-signup-footer-link:hover {
+    color: #1e40af;
+}
+.b-signin-gradient-line {
+    height: 0.5rem; 
+    background: linear-gradient(to right, #60a5fa, #6366f1, #a78bfa); 
+    border-radius: 10px;
+    width: 100%;
+}
+.b-signin-input-type-indicator {
+    font-size: 0.8em;
+    color: #666;
+    font-weight: normal;
+  }
+  
+  .b-signin-phone-preview {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 4px;
+    padding-left: 8px;
+}

@@ -1,0 +1,336 @@
+.businessman-inventory-add-{
+   --background: white;
+   margin: 0;
+   padding: 0;
+}
+.businessman-inventory-add-header{
+    height: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    
+}
+.businessman-inventory-add-header-outline{
+   
+    font-size: 30px;
+    color: black;
+    margin-left: 5px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    
+}
+.businessman-inventroy-item-add{
+    color:#4d90fe;
+    margin-left: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 100px;
+}
+.business-inventory-add-header-content {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0;
+    margin-top: 40px;
+}
+  
+.business-inventory-add-left-header {
+    display: flex;
+    align-items: center;
+   padding-left: 0;
+    
+   
+}
+
+  
+.businessman-inventory-add-right-header {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+.business-inventory-add-left-header ion-button {
+    --padding-start: 0;
+    --padding-end: 0;
+    margin: 0;
+}
+.toggle-in-manual-entry{
+    color: black;
+}
+
+  
+
+.toggle-item {
+    --background: white;
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --inner-padding-end: 0;
+    
+  }
+
+ 
+  .toggle-label {
+    color: black !important;
+    opacity: 1 !important;
+    display: block !important;
+    visibility: visible !important;
+    font-size: 16px !important;
+  }
+  
+  
+  ion-toggle[color="success"] {
+    --background: #e6e6e6;
+    --background-checked: #2dd36f;
+    --handle-background: blue;
+    --handle-background-checked: white;
+  }
+  .upload-section {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upload-title {
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 8px;
+    color: black;
+  }
+  
+  .upload-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  .upload-area {
+    border: 2px dashed #4d90fe;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .upload-icon {
+    font-size: 48px;
+    color: #4d90fe;
+    margin-bottom: 12px;
+  }
+  
+  .upload-text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  
+  .browse-button {
+    color: #4d90fe;
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    
+    text-decoration: underline;
+  }
+  
+  .selected-file {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .file-note {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 16px;
+  }
+  
+  /* Add Button */
+  .add-button {
+    --background: #4d90fe;
+    --border-radius: 8px;
+    --color: white;
+    margin-top: 16px;
+    font-weight: 500;
+    width: 97%;
+}
+.business-invoice-add-tem-with-quantity{
+   
+    border-radius: 8px;
+    color: black;
+    margin-left: 4%;
+}
+.business-add-enter-item-name {
+ 
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  text-indent: 20px;
+  padding: 5px ;
+  margin-top: 5px;
+  height: 20px;
+  
+  display: block;
+  font-size: 14px;
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+
+.business-add-enter-item-name:focus {
+  border-color: #999;
+  box-shadow: none;
+  outline: none;
+  
+  outline: none !important;
+  border: 1px solid #999; 
+}
+.business-quantity-add-inventory-in{
+    margin-top: 5px;
+    height: 60px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    /* box-shadow:  1px  4px 2px 4px rgba(0, 0, 0, 0.1); */
+}
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    background-color: #ffffff;
+  }
+  
+  .qty-btn {
+    font-size: 20px;
+    min-width: 40px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+  }
+  
+.qty-input {
+    font-size: 14px;
+    font-weight: bold;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    
+}
+.business-inventory-add-price{
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   height: 30px;
+   width: 80%;
+   gap: 10px;
+}
+
+
+.price-input-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background-color: white;
+  max-width: 200px;
+  height: 30px;
+ 
+}
+
+.currency-symbol {
+  margin-right: 6px;
+  font-size: 14px;
+  color: #555;
+}
+.price-input-wrapper ion-input {
+  flex: 1;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+.business-add-inventory-text-size{
+  font-size:16px;
+}
+.toggle-item-mark-business-add-item-page{
+  --background: white;
+  color: black;
+  --background: white;
+  --padding-start:0;
+  --padding-end: 16px;
+  --inner-padding-end: 0;
+}
+.quantity-input-container-after-togglchange {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.quantity-label-after-togglchange {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.quantity-input-wrapper-after-togglchange {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px 8px;
+  background-color: white;
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+}
+
+.quantity-input-after-togglchange {
+  flex: 1;
+  --padding-start: 0;
+  --padding-end: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.unit-label-after-togglchange {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #555;
+}
+.business-inventory-add-item-in-inventory{
+  --background: #4d90fe;
+  color: white;
+  width: 70%;
+  margin-left: 15%;
+  cursor: pointer;
+}
+.inventory-add-title , .quantity-label{
+  margin-left: 10px;
+}
+
+  
+
+  

@@ -1,0 +1,255 @@
+.b-forget-page{
+    --background: white;
+    margin: 0;
+    padding: 0;
+}
+.b-forget-success-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    margin: 60px auto;
+    position: relative;
+}
+  
+.b-forget-wave-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+  
+.b-forget-wave-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(76, 175, 80, 0.2);
+    top: 0;
+    left: 0;
+    animation: wave 1.5s infinite;
+}
+  
+.b-forget-wave-circle.delay1 {
+    animation-delay: 0.3s;
+}
+  
+.b-forget-wave-circle.delay2 {
+    animation-delay: 0.6s;
+}
+  
+  @keyframes wave {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  
+.b-forget-checkmark-circle {
+    background-color: #4CAF50;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.b-forget-checkmark {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+  
+.b-forget-success-heading {
+    color: #2e7d32;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+  
+.b-forget-success-message {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+  
+.b-forget-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.b-forget-btn:hover {
+    background-color: #388e3c;
+}
+
+.b-forget-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 2.5rem 1rem;
+  }
+  
+  .b-forget-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 50%;
+    width: 100%;
+    max-width: 28rem;
+  }
+  
+ 
+  .b-forget-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .b-forget-logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 10%;
+  }
+  
+
+  .b-forget-error-message {
+    background-color: #fee2e2;
+    border: 1px solid #f87171;
+    color: #b91c1c;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+  }
+  
+ 
+  .b-forget-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+  }
+  
+  .b-forget-subtitle {
+    color: #4b5563;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .b-forget-footer-text {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 1.5rem;
+  }
+  
+ 
+  .b-forget-input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .b-forget-label {
+    display: block;
+    color: #374151;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .b-forget-input {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    appearance: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    color: #374151;
+    line-height: 1.25;
+  }
+  
+  .b-forget-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #3b82f6;
+  }
+  
+
+  .b-forget-primary-btn {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .b-forget-primary-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  .b-forget-primary-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #3b82f6;
+  }
+  
+  .b-forget-primary-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .b-forget-update-btn:focus {
+    box-shadow: 0 0 0 2px #10b981;
+  }
+  
+  .b-forget-secondary-btn {
+    color: #3b82f6;
+    font-weight: 500;
+    font-size: 0.875rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .b-forget-secondary-btn:hover {
+    color: #1d4ed8;
+  }
+  
+
+  .b-forget-link {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  
+  .b-forget-link:hover {
+    text-decoration: none;
+  }
+  
+ 
+  .b-forget-text-center {
+    text-align: center;
+  }
+  
+  .b-forget-recaptcha {
+    margin-bottom: 1.5rem;
+  }

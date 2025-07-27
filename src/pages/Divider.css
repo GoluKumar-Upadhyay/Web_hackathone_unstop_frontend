@@ -1,0 +1,93 @@
+.divider-page {
+    --background: #1582EE;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .usercontent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1582EE;
+    position: relative;
+  }
+  
+  .app-logo {
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    margin-top: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .nearbux {
+    color: white;
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .dividerbutton-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.welcome-in-nearbux{
+    color: black;
+    font-weight: bold;
+}
+.acknowledge{
+  color: black;
+}
+.app-button {
+  --background: white;
+  --border-radius: 20px;
+  --box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  color: #2277E6;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0; 
+  margin-bottom: 15px;
+  text-transform: none; 
+  height: 60px;
+  
+}
+
+.app-button-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 16px;
+  width: 100%;
+  height: 40px;
+  gap: 15px;
+  border-radius: 30px;
+ 
+}
+
+.app-icon {
+  width: 25px;
+  height: 25px;
+}
+ion-button.app-button::part(native) {
+  border-radius: 10px;
+}
+

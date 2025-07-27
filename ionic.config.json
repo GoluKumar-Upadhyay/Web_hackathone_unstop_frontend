@@ -1,0 +1,7 @@
+{
+  "name": "App_Nearbux",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

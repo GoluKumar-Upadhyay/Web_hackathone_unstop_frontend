@@ -1,0 +1,242 @@
+.user-wallet{
+    --background: white;
+    margin: 0;
+    padding: 0;
+}
+.userwallet-header{
+    background: linear-gradient(120deg, #1989d1 60%, #349fe0 40%);
+    height: 70px;
+   
+   
+    padding-top: env(safe-area-inset-top);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+   
+    
+}
+.header-wallet-text{
+    color: white;
+    font-size: 17px;
+    margin-left: 3%;
+    padding-top: 15px;
+}
+.userwallet-footer {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userwallet-footer {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+  
+.userwallet-footernavbar {
+    height: 50px;
+    width: 95%;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: .5%;
+   
+}
+  
+.walletusertool {
+    --background: white;
+}
+  
+.footerwallet-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    cursor: pointer;
+}
+  
+.iconwallet-container {
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
+  
+.footerwallet-icon {
+    color: black;
+    
+    font-size: 24px;
+}
+  
+.footerwallet-iconaccount {
+    color: red;
+    /* font-weight: bolder; */
+    font-size: 24px;
+}
+  
+.footerwallet-text {
+    font-size: 12px;
+    
+    text-align: center;
+    color: black;
+}
+  
+.footerwallet-textaccount {
+    font-size: 12px;
+   
+    text-align: center;
+    color: red;
+
+}
+.footerwallet-item.active .footerwallet-icon {
+    color: blue;
+}
+  
+.footerwallet-text.active {
+    color: blue;
+}
+  
+.footerwallet-item.active .footer-iconaccount {
+    color: red;
+}
+.user-wallet-icondiv {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    height: 70px;
+    width: 100%;
+    padding-left: 2%; 
+}
+
+.user-walletheader-icon {
+    font-size: 25px; 
+    height: 50px;
+    width: 50px;
+    font-weight: bolder;
+    color: orange;
+}
+
+.user-wallet-mywallet {
+    font-weight: bolder;
+    color: black;
+    font-size: 22px;
+    margin: 0; 
+}
+.wallet-card {
+    background: linear-gradient(120deg, #1989d1 40%, #349fe0 60%);
+    border-radius: 16px;
+    width: 300px;
+    height: 180px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+    margin-left: 3%;
+  }
+  
+  .wallet-card-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .wallet-card-balance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .coin-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .balance-amount {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+  
+  .mastercard-icon {
+    width: 50px;
+    height: 50px;
+}
+.user-wallet-transactionlist{
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #222222; 
+  font-size: 16px;
+  margin-left: 3%;
+  
+}
+
+
+.custom-wallet-segment {
+  --indicator-color: transparent;
+  --indicator-height: 0px;
+  --background: #f0f0f0;
+  border-radius: 20px;
+ 
+  width: 95%;
+  height: 45px;
+  margin-left: 2%;
+
+}
+
+/* 2. General button style */
+.custom-wallet-segment-button {
+  border-radius: 16px;
+  margin: 0 2px;
+  font-size: 11px;
+  font-weight: 100px;
+  box-shadow: none;
+  --color: #000;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+
+
+ion-segment-button.segment-button-checked.custom-wallet-segment-button {
+  background-color: #08a391;
+ 
+  color: white;
+ 
+}
+
+
+.custom-wallet-segment-button.md {
+  --indicator-color: transparent;
+  --indicator-height: 0;
+}
+
+
+.custom-wallet-segment-button:not(:last-child)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -1px;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background-color: #dcdcdc;
+  z-index: 1;
+}

@@ -1,0 +1,182 @@
+.user-shop-page{
+    --background: white;
+    margin: 0;
+    padding: 0;
+}
+.usershop-footer {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.usershop-footer {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+  
+.usershop-footernavbar {
+    height: 50px;
+    width: 95%;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: .5%;
+   
+}
+  
+.walletusertool {
+    --background: white;
+}
+  
+.footershop-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    cursor: pointer;
+}
+  
+.iconshop-container {
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
+  
+.footershop-icon {
+    color: black;
+    
+    font-size: 24px;
+}
+  
+.footershop-iconaccount {
+    color: red;
+    /* font-weight: bolder; */
+    font-size: 24px;
+}
+  
+.footershop-text {
+    font-size: 12px;
+    
+    text-align: center;
+    color: black;
+}
+  
+.footershop-textaccount {
+    font-size: 12px;
+   
+    text-align: center;
+    color: red;
+
+}
+.footershop-item.active .footerwallet-icon {
+    color: blue;
+}
+  
+.footershop-text.active {
+    color: blue;
+}
+  
+.footershop-item.active .footer-iconaccount {
+    color: red;
+}
+.user-searchbarshop {
+    width: 99%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+  
+.keep-searchbarshop {
+    height: 50px;
+    max-width: 70%;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(92, 89, 89, 0.2);
+    background-color: white;
+    border: 1px solid rgb(219, 210, 210);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 15px;
+}
+  
+.searchbar-iconshop {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+  
+.searchbar-spaceshop {
+    width: 90%;
+}
+  
+.userinput-icon-leftshop {
+    color: #3491db;
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+ 
+.standard-inputshop {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #555;
+    background-color: transparent;
+    padding: 0;
+    caret-color: #555; 
+}
+  
+  
+.standard-input::placeholder {
+    color: #999;
+    opacity: 1;
+}
+  
+  
+.standard-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.shop-filter-icon-in-user{
+    background-color: #3491db;
+    height:50px ;
+    width: 25%;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 20px;
+}
+.user-shop-filter-btn{
+    height: 30px;
+    width: 30px;
+    color:white;
+}

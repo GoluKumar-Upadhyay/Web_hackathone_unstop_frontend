@@ -1,0 +1,180 @@
+.business-analytics-page{
+    --background: white;
+}
+
+.business-analytics-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}.businessman_analytics-page {
+    padding: 16px;
+ 
+    padding-top: 80px;
+  }
+  .businessman_analytics-add-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+    height: 60px; 
+    width: 100%;
+}
+.businessman_analytics-add-left-header {
+  display: flex;
+  align-items: center;
+  width: 2%;
+  
+
+}
+
+.businessman_analytics-add-header-outline {
+  font-size: 24px;
+  color: #333;
+}
+
+.businessman_analytics-add-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    height: 100%;
+    width: 10%;
+} 
+.businessman_analytics-add-header-outline{
+  margin-right: 40%;
+  font-size: 50px;
+} 
+  
+  .businessman_analytics-head-part {
+    color: black;
+    font-size: 20px;
+    margin-left: 4%;
+    font-weight: bold;
+    margin-top: 80px;
+  }
+  
+  .businessman_analytics-card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-around;
+   
+  }
+  
+  .businessman_analytics-card {
+   width: 95%;
+   margin-left: 2.5%;
+  
+  }
+  
+  .businessman_analytics-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 8px;
+  }
+  
+  
+  .businessman_analytics-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #eee;
+  }
+  
+  .businessman_analytics-icon.green {
+    background: rgba(0, 255, 0, 0.2);
+    color: green;
+  }
+  
+  .businessman_analytics-icon.blue {
+    background: rgba(0, 0, 255, 0.2);
+    color: blue;
+  }
+  
+  .businessman_analytics-icon.purple {
+    background: rgba(128, 0, 128, 0.2);
+    color: purple;
+  }
+  
+  .businessman_analytics-icon.yellow {
+    background: rgba(255, 255, 0, 0.2);
+    color: goldenrod;
+  }
+  .businessman_analytics-top-products {
+    margin-top: 24px;
+  }
+  
+  .businessman_analytics-top-products-title {
+    color: #777;
+    font-size: 16px;
+    margin-left: 4%;
+    margin-bottom: 8px;
+  }
+  
+  .businessman_analytics-product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 4%;
+  }
+  
+  .businessman_analytics-product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-left-width: 5px;
+    border-radius: 4px;
+    padding: 8px 12px;
+    background: #fff;
+    font-size: 14px;
+  }
+  
+  .businessman_analytics-product-name {
+    flex: 1;
+  }
+  
+  .businessman_analytics-product-sold {
+    font-weight: bold;
+  }
+  
+  .businessman_analytics-product-item.blue-border {
+    border-left-color: #a3d5ff;
+    height: 50px;
+  }
+  
+  .businessman_analytics-product-item.yellow-border {
+    border-left-color: #ffe59e;
+    height: 50px;
+  }
+  
+  .businessman_analytics-product-item.green-border {
+    border-left-color: #b2f2bb;
+    height: 50px;
+  }
+.business-analyst-popup{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}  
+.business-analytics-popup-child{
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 10px;
+    
+} 
+.purple-border {
+  border-left: 4px solid #8B5CF6;
+} 

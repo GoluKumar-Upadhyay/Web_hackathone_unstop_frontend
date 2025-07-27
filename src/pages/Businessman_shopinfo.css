@@ -1,0 +1,154 @@
+.businessman-shopinfo{
+    --background: white;
+    margin: 0;
+    padding: 0;
+}
+.b-shopinfo-logo-container{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+.b-shopinfo-logoes{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: red;
+    object-fit: cover;
+}
+.b-shopinfo-logo-size{
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.b-shopinfo-data-container{
+    width: 90%;
+    height: auto;
+
+}
+.b-shopinfo-b-info{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+@media  (max-width:768px){
+    .shopinfo--field-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        margin-left: 10px;
+        gap: 10px;
+    }
+    .b-shopinfo-input-box{
+        border: 1px solid grey;
+        width: 90%;
+        border-radius:7px;
+        text-indent: 8px;
+        box-shadow: none;
+        scrollbar-highlight-color: none;
+        
+    }
+    .b-shopinfo-input-box:hover{
+        border-color:#4300FF;
+    }
+}
+@media (max-width:412px) {
+    .shopinfo--field-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        margin-left: 10px;
+        gap: 10px;
+    }
+    .b-shopinfo-input-box{
+        border: 1px solid grey;
+        width: 90%;
+        border-radius:7px;
+        text-indent: 8px;
+        box-shadow: none;
+        scrollbar-highlight-color: none;
+        
+    }
+    .b-shopinfo-input-box:hover{
+        border-color:#4300FF;
+    }
+}
+.shopinfo--field-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin-left: 10px;
+    gap: 10px;
+}
+.b-shopinfo-input-box{
+    border: 1px solid grey;
+    width: 90%;
+    border-radius:7px;
+    text-indent: 8px;
+    box-shadow: none;
+    scrollbar-highlight-color: none;
+    
+}
+.b-shopinfo-input-box:hover{
+    border-color:#4300FF;
+}
+.shopinfo--field-container-date-time{
+    width:90%;
+    height:auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.b-time-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    border: 1px solid grey;
+    width: 90%;
+    margin-left: 10PX;
+    border-radius: 10PX;
+    padding: 10PX 10PX;
+  }
+  
+  .b-time-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .b-time-button {
+    --background: #fff;
+    --border: 1px solid #ccc;
+    --border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 16px;
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.b-input-label{
+   text-align: center;
+}
+.b-shopinfo-btn-submit{
+    height: 40px;
+    width: 60%;
+    --background: #00CAFF;
+    --border-radius: 10px;
+    margin-left: 20%;
+}
+  

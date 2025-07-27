@@ -1,0 +1,186 @@
+.businessman-inventory{
+    --background: white;
+    margin: 0;
+    padding: 0;
+}
+.businessman-inventory-header{
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(120deg, #1989d1 60%, #349fe0 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.business-inventory-header-content {
+    width: 95%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 35px;
+}
+  
+.business-inventory-left-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.inventory-name{
+    font-size:15px;
+    font-family:initial;
+    color: rgb(240, 221, 213);
+}
+  
+.business-inventory-welcome-text {
+    color: white;
+    margin: 0;
+    font-size: 15px;
+}
+  
+.businessman-inventory-right-header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+  
+.businessman-inventory-user-headertitle {
+    color: white;
+}
+.businessman-inventory-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #e5e5e5;
+    color: white;
+    padding-top: 60px;
+    transform: translateX(-300px);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+  
+.businessman-inventory-sidebar.open {
+    transform: translateX(0);
+}
+  
+.businessman-inventory-sidebar-close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+   
+}
+  
+.businessman-inventory-sidebar-list {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.businessman-inventory-sidebar-list li {
+    padding: 15px;
+    cursor: pointer;
+    color: black;
+}
+  
+.businessman-inventory-sidebar-list li:hover {
+    background-color: #ffff;
+}
+  
+.businessman-inventory-signuplogout {
+    color: blue;
+    
+    
+}
+.businessman-inventory-hamburger-menushop {
+    cursor: pointer;
+    font-size: 25px;
+}
+  
+.businessman-inventory-menu-iconshop {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.business-inventory-footer{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.business-inventory-footer-navebar{
+    height: 50px;
+    width: 95%;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: .5%;
+   
+}
+.business-inventory-footer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    cursor: pointer;
+}
+.business-inventory-footer-icon{
+    color: black;
+    font-size: 24px;
+}
+.business-inventory-footer-text{
+    font-size: 12px;
+    
+    text-align: center;
+    color: black;
+}
+.business-inventory-footer-account-icon{
+    color: red;
+    font-size: 24px;
+}
+.business-inventory-footer-account-text{
+    color: red;
+    font-size: 13px;
+}
+.business-inventory-footer-item.active .business-inventory-footer-icon {
+    color: blue;
+}
+  
+.business-inventory-footer-text.active {
+    color: blue;
+}
+  
+.business-inventory-footer-item.active .footer-iconaccount {
+    color: red;
+}
+.business-inventory-footer-icon {
+    color: black; /* fallback */
+    --ion-color-base: black;
+  }
+  
+  /* Default text color */
+  .business-inventory-footer-text {
+    color: black;
+  }
+  
+  /* When route is active */
+  .business-inventory-footer-item.active .business-inventory-footer-icon {
+    color: blue;
+    --ion-color-base: blue;
+  }
+  
+  .business-inventory-footer-item.active .business-inventory-footer-text {
+    color: blue;
+  }
+    
