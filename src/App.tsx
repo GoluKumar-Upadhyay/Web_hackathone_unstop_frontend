@@ -25,7 +25,7 @@ import User_signup_helper_1 from './pages/User_signup_helper_1';
 
 import User_login from './pages/User_login';
 
-import Businessman_home1 from './pages/Businessman_home1';
+
 import User_product from './pages/User_product';
 
 
@@ -91,7 +91,7 @@ const App: React.FC = () => (
         <Route exact path="/businessman_signup"><Businessman_signup /></Route>
         <Route exact path="/businessman_shopinfo"><Businessman_shopinfo /></Route>
 
-        <Route exact path="/businessman_home1"><Businessman_home1 /></Route>
+        
         <Route exact path="/user_product"><User_product /></Route>
         
 
