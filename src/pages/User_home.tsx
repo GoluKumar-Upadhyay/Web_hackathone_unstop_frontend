@@ -35,7 +35,7 @@ const User_home: React.FC = () => {
     }, []);
   
     const navigateToshop = () => {
-      history.push('/User_account');
+      history.push('/User_shop');
     };
   
     
