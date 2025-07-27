@@ -106,9 +106,9 @@ const ProductStore = () => {
     }
   }, []);
 
-  const addToCart = (product) => {
+  const addToCart = (product: Product) => {
     const existingItem = cart.find(item => item.id === product.id);
-    let updatedCart;
+    let updatedCart: CartItem[];
     
     if (existingItem) {
       updatedCart = cart.map(item =>
@@ -128,14 +128,14 @@ const ProductStore = () => {
     }
   };
 
-  const updateQuantity = (id, change) => {
+  const updateQuantity = (id: string | number, change: number) => {
     const updatedCart = cart.map(item => {
       if (item.id === id) {
         const newQuantity = item.quantity + change;
         return newQuantity > 0 ? { ...item, quantity: newQuantity } : null;
       }
       return item;
-    }).filter(Boolean);
+    }).filter((item): item is CartItem => item !== null);
     
     setCart(updatedCart);
     try {
@@ -145,7 +145,7 @@ const ProductStore = () => {
     }
   };
 
-  const removeFromCart = (id) => {
+  const removeFromCart = (id: string | number) => {
     const updatedCart = cart.filter(item => item.id !== id);
     setCart(updatedCart);
     try {
@@ -251,7 +251,7 @@ const ProductStore = () => {
                 backdropFilter: 'blur(10px)',
                 border: '1px solid rgba(255, 255, 255, 0.3)'
               }}>
-                <StoreIcon style={{ color: 'white' }} />
+                <StoreIcon />
               </div>
               <div>
                 <h1 style={{ 
@@ -351,16 +351,14 @@ const ProductStore = () => {
                   transform: 'scale(1)'
                 }}
                 onMouseOver={(e) => {
-                  const target = e.target as HTMLButtonElement;
-                  target.style.background = 'linear-gradient(145deg, #ff5252, #e53e3e)';
-                  target.style.transform = 'scale(1.05)';
-                  target.style.boxShadow = '0 12px 35px rgba(238, 90, 82, 0.6)';
+                  e.currentTarget.style.background = 'linear-gradient(145deg, #ff5252, #e53e3e)';
+                  e.currentTarget.style.transform = 'scale(1.05)';
+                  e.currentTarget.style.boxShadow = '0 12px 35px rgba(238, 90, 82, 0.6)';
                 }}
                 onMouseOut={(e) => {
-                  const target = e.target as HTMLButtonElement;
-                  target.style.background = 'linear-gradient(145deg, #ff6b6b, #ee5a52)';
-                  target.style.transform = 'scale(1)';
-                  target.style.boxShadow = '0 8px 25px rgba(238, 90, 82, 0.4)';
+                  e.currentTarget.style.background = 'linear-gradient(145deg, #ff6b6b, #ee5a52)';
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.boxShadow = '0 8px 25px rgba(238, 90, 82, 0.4)';
                 }}
               >
                 <ShoppingCartIcon />
@@ -477,12 +475,14 @@ const ProductStore = () => {
                   cursor: 'pointer'
                 }}
                 onMouseOver={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-4px)';
-                  e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1)';
+                  const target = e.currentTarget as HTMLDivElement;
+                  target.style.transform = 'translateY(-4px)';
+                  target.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1)';
                 }}
                 onMouseOut={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+                  const target = e.currentTarget as HTMLDivElement;
+                  target.style.transform = 'translateY(0)';
+                  target.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
                 }}
               >
                 <div style={{ position: 'relative' }}>
@@ -560,8 +560,14 @@ const ProductStore = () => {
                         fontWeight: '600',
                         transition: 'all 0.2s'
                       }}
-                      onMouseOver={(e) => e.target.style.backgroundColor = '#059669'}
-                      onMouseOut={(e) => e.target.style.backgroundColor = '#10b981'}
+                      onMouseOver={(e) => {
+                        const target = e.currentTarget as HTMLButtonElement;
+                        target.style.backgroundColor = '#059669';
+                      }}
+                      onMouseOut={(e) => {
+                        const target = e.currentTarget as HTMLButtonElement;
+                        target.style.backgroundColor = '#10b981';
+                      }}
                     >
                       <PlusIcon />
                       Add to Cart
@@ -742,12 +748,12 @@ const ProductStore = () => {
                   margin: '0 auto'
                 }}
                 onMouseOver={(e) => {
-                  const target = e.target as HTMLButtonElement;
+                  const target = e.currentTarget as HTMLButtonElement;
                   target.style.transform = 'scale(1.05)';
                   target.style.boxShadow = '0 12px 35px rgba(16, 185, 129, 0.6)';
                 }}
                 onMouseOut={(e) => {
-                  const target = e.target as HTMLButtonElement;
+                  const target = e.currentTarget as HTMLButtonElement;
                   target.style.transform = 'scale(1)';
                   target.style.boxShadow = '0 8px 25px rgba(16, 185, 129, 0.4)';
                 }}
@@ -799,11 +805,11 @@ const ProductStore = () => {
                         transition: 'transform 0.2s'
                       }}
                       onMouseOver={(e) => {
-                        const target = e.target as HTMLButtonElement;
+                        const target = e.currentTarget as HTMLButtonElement;
                         target.style.transform = 'scale(1.2)';
                       }}
                       onMouseOut={(e) => {
-                        const target = e.target as HTMLButtonElement;
+                        const target = e.currentTarget as HTMLButtonElement;
                         target.style.transform = 'scale(1)';
                       }}
                       onClick={() => {
