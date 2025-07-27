@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 // Define TypeScript interfaces for better type safety
 interface Product {
-  id?: string | number;
+  id: string | number;
   name?: string;
   price?: number;
   image?: string;
@@ -128,22 +128,21 @@ const ProductStore = () => {
     }
   };
 
-  const updateQuantity = (id: string | number, change: number) => {
-    const updatedCart = cart.map(item => {
-      if (item.id === id) {
-        const newQuantity = item.quantity + change;
-        return newQuantity > 0 ? { ...item, quantity: newQuantity } : null;
-      }
-      return item;
-    }).filter((item): item is CartItem => item !== null);
-    
-    setCart(updatedCart);
-    try {
-      localStorage.setItem('cart', JSON.stringify(updatedCart));
-    } catch (error) {
-      console.error('Error saving cart:', error);
+  // In your functions that use product IDs:
+const updateQuantity = (id: string | number | undefined, change: number) => {
+  if (id === undefined) return; // Add this check
+  
+  const updatedCart = cart.map(item => {
+    if (item.id === id) {
+      const newQuantity = item.quantity + change;
+      return newQuantity > 0 ? { ...item, quantity: newQuantity } : null;
     }
-  };
+    return item;
+  }).filter((item): item is CartItem => item !== null);
+  
+  setCart(updatedCart);
+  localStorage.setItem('cart', JSON.stringify(updatedCart));
+};
 
   const removeFromCart = (id: string | number) => {
     const updatedCart = cart.filter(item => item.id !== id);

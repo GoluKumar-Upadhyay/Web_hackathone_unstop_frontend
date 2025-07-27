@@ -107,7 +107,7 @@ const User_shop = () => {
           e.currentTarget.style.transform = 'translateY(0)';
           e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
         }}
-        onClick={() => handleShopClick(shop.id)}
+        onClick={() => handleShopClick(shop.id, shop.owner?.phone || '')}
       >
         {/* Shop Image Section */}
         <div style={{ position: 'relative', height: '160px', overflow: 'hidden' }}>
